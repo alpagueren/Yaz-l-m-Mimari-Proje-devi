@@ -52,9 +52,12 @@ public class SekilFaktoru {
         return null;
     }
     '''
+    
     Main kısmı :
     Yapılan seçime göre çizilmesi gereken şeklin emrini veriyor.
+    
     '''java
+    
     public class FabrikaDeseni {
     public static void main(String[] args){
         SekilFaktoru sekilFaktoru = new SekilFaktoru();
@@ -69,7 +72,8 @@ public class SekilFaktoru {
         sekil3.çiz();
     }
 }
+
 '''
-#Ön Yüz (YAPISAL) Tasarım Deseni
+# Ön Yüz (YAPISAL) Tasarım Deseni
 Bu tasarım deseni, sistemin detaylarını saklayarak, istemcinin dışarıdan sisteme ulaşabilmesi için tek bir ön yüz sunar. Sistemdeki alt sınıflara, bu ön yüz sınıfı ile ulaşılır.  İstemci yalnızca sistemdeki bu ön yüz sınıfını bilir. Yani kısaca ön yüz sınıfı, sistemin dışarıya açılmış bir kapısı gibidir. 
-![Image of Class](https://github.com/alpagueren/Yaz-l-m-Mimari-Proje-devi/commit/4995414aabb53983e944ce7d127c58fa72271467)
+![Image of Class](https://github.com/alpagueren/Yaz-l-m-Mimari-Proje-devi/blob/master/%C3%96n%20Y%C3%BCz%20DESEN.png)
