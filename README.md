@@ -1,4 +1,4 @@
-# Yazilim-Mimari-Proje-ödevi
+# Yazılım Mimari Proje ödevi
 # Konu : Fabrika Yordami Tasarim Deseni ve Ön Yüz Tasarim Deseni Örneği
 
 #Fabrika Yordamı (YARATIMSAL) Tasarım Deseni:
@@ -6,13 +6,13 @@ Fabrika yordam tasarım deseni, nesne yaratma sorumluluğunun bir yordama verilm
 ![Image of Class](https://github.com/alpagueren/Yaz-l-m-Mimari-Proje-devi/blob/master/Fabrika%20desen.png)
 
 interface
-'''java
+```java
 public interface Sekilİnterface {
     void çiz(); 
 }
-'''
+```
 şekilleri tanımladığım sınıf
-'''java
+```java
 public class Sekil {
     public class Diktorgen implements Sekilİnterface{
         @Override
@@ -33,9 +33,9 @@ public class Sekil {
         }
     }
 }
-'''
+```
 Girilen değere göre hangi sınıfın çalışacağına karar verir.
-'''java
+```java
 public class SekilFaktoru {
     
     public Sekil getSekil(String SekilTipi ){
@@ -51,12 +51,11 @@ public class SekilFaktoru {
         }
         return null;
     }
-    '''
-    
+    ```
     Main kısmı :
     Yapılan seçime göre çizilmesi gereken şeklin emrini veriyor.
     
-    '''java
+    ```java
     
     public class FabrikaDeseni {
     public static void main(String[] args){
@@ -73,7 +72,7 @@ public class SekilFaktoru {
     }
 }
 
-'''
+```
 # Ön Yüz (YAPISAL) Tasarım Deseni
 Bu tasarım deseni, sistemin detaylarını saklayarak, istemcinin dışarıdan sisteme ulaşabilmesi için tek bir ön yüz sunar. Sistemdeki alt sınıflara, bu ön yüz sınıfı ile ulaşılır.  İstemci yalnızca sistemdeki bu ön yüz sınıfını bilir. Yani kısaca ön yüz sınıfı, sistemin dışarıya açılmış bir kapısı gibidir. 
 ![Image of Class](https://github.com/alpagueren/Yaz-l-m-Mimari-Proje-devi/blob/master/%C3%96n%20Y%C3%BCz%20DESEN.png)
