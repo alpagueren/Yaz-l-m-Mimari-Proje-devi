@@ -11,7 +11,7 @@ public interface Sekilİnterface {
     void çiz(); 
 }
 ```
-şekilleri tanımladığım sınıf
+Şekilleri tanımladığım sınıf
 ```java
 public class Sekil {
     public class Diktorgen implements Sekilİnterface{
@@ -53,8 +53,7 @@ public class SekilFaktoru {
     }
     ```
     Main kısmı :
-    Yapılan seçime göre çizilmesi gereken şeklin emrini veriyor.
-    
+    Yapılan seçime göre çizilmesi gereken şeklin emrini veriyor.  
     ```java
     
     public class FabrikaDeseni {
@@ -71,7 +70,6 @@ public class SekilFaktoru {
         sekil3.çiz();
     }
 }
-
 ```
 # Ön Yüz (YAPISAL) Tasarım Deseni
 Bu tasarım deseni, sistemin detaylarını saklayarak, istemcinin dışarıdan sisteme ulaşabilmesi için tek bir ön yüz sunar. Sistemdeki alt sınıflara, bu ön yüz sınıfı ile ulaşılır.  İstemci yalnızca sistemdeki bu ön yüz sınıfını bilir. Yani kısaca ön yüz sınıfı, sistemin dışarıya açılmış bir kapısı gibidir. 
