@@ -1,4 +1,4 @@
-# Yazılım Mimari Proje ödevi
+# Yazılım Mimarisi ve Tasarımmı Proje Ödevi
 # Konu : Fabrika Yordami Tasarim Deseni ve Ön Yüz Tasarim Deseni Örneği
 
 #Fabrika Yordamı (YARATIMSAL) Tasarım Deseni:
