@@ -74,3 +74,71 @@ public class SekilFaktoru {
 # Ön Yüz (YAPISAL) Tasarım Deseni
 Bu tasarım deseni, sistemin detaylarını saklayarak, istemcinin dışarıdan sisteme ulaşabilmesi için tek bir ön yüz sunar. Sistemdeki alt sınıflara, bu ön yüz sınıfı ile ulaşılır.  İstemci yalnızca sistemdeki bu ön yüz sınıfını bilir. Yani kısaca ön yüz sınıfı, sistemin dışarıya açılmış bir kapısı gibidir. 
 ![Image of Class](https://github.com/alpagueren/Yaz-l-m-Mimari-Proje-devi/blob/master/%C3%96n%20Y%C3%BCz%20DESEN.png)
+Interface
+```java
+public interface Sekilİnterface {
+    void ciz();   
+}
+```
+Şekilleri tanımladığım yer
+```java
+public class Sekil {  
+    public class Diktorgen implements Sekilİnterface{
+        @Override
+        public void ciz() {
+            System.out.println("Diktörtgen çizimi :: çiz() yöntemiyle.");           
+        }
+    }
+    public class Cember implements Sekilİnterface{
+        @Override
+        public void ciz() {
+            System.out.println("Cember çizimi :: çiz() yöntemiyle.");            
+        }
+    }
+    public class Kare implements Sekilİnterface{
+        @Override
+        public void ciz() {
+            System.out.println("Kare çizimi :: çiz() yöntemiyle.");
+        }
+    }
+}
+```
+Şekillerin çizime hazır ve nesne olarak tanımlandığı yer 
+```java
+public class SekilYapimi {
+    private final Sekil Dikdortgen;
+    private final Sekil Cember;
+    private final Sekil Kare;
+    
+    public SekilYapimi(){
+        Dikdortgen = new dikdortgen();
+        Cember = new cember();
+        Kare = new kare();
+        
+    }
+    public void cizdikdortgen(){
+        Dikdortgen.ciz();
+    }
+    public void cizcember(){
+        Cember.ciz();
+    }
+    public void cizkare(){
+        Kare.ciz();
+    }
+   ```
+   Main Kısmı :
+   Şekil yap adlı bir nesne tanımlandı ve şekiller çizildi.
+   ```java
+   public class OnYuzDeseniDemo {
+
+   
+    public static void main(String[] args) {
+        SekilYapimi sekilYapimi = new SekilYapimi();
+        
+        sekilYapimi.cizdikdortgen();
+        sekilYapimi.cizcember();
+        sekilYapimi.cizkare();
+    }
+    
+}
+   ```
