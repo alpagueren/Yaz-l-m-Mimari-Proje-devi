@@ -52,9 +52,8 @@ public class SekilFaktoru {
         return null;
     }
     ```
-    Main kısmı :
+    Main Kısmı :
     Yapılan seçime göre çizilmesi gereken şeklin emrini veriyor. 
-    
     ```java
     public class FabrikaDeseni {
     public static void main(String[] args){
